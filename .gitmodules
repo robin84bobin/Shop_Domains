@@ -1,0 +1,3 @@
+[submodule "Assets/Plugins/Select-implementation-property-drawer"]
+	path = Assets/Plugins/Select-implementation-property-drawer
+	url = git@github.com:medvedya/Select-implementation-property-drawer.git
