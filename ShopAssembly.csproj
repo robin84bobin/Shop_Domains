@@ -42,10 +42,13 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Shop\Configs\ShopConfig.cs" />
-     <Compile Include="Assets\Scripts\Shop\ShopItemWidget.cs" />
-     <Compile Include="Assets\Scripts\Shop\ShopView.cs" />
-     <Compile Include="Assets\Scripts\Shop\PlayerParamWidget.cs" />
+     <Compile Include="Assets\Scripts\Shop\View\ShopItemWidget.cs" />
+     <Compile Include="Assets\Scripts\Shop\View\ShopView.cs" />
+     <Compile Include="Assets\Scripts\Shop\View\PlayerIntParamWidget.cs" />
      <Compile Include="Assets\Scripts\Shop\Configs\SellableItemConfig.cs" />
+     <Compile Include="Assets\Scripts\Shop\View\PlayerStringParamWidget.cs" />
+     <Compile Include="Assets\Scripts\Shop\View\PlayerParamWidget.cs" />
+     <Compile Include="Assets\Scripts\Shop\Model\ShopModel.cs" />
      <None Include="Assets\Scripts\Shop\ShopAssembly.asmdef" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.12f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -734,11 +737,14 @@
      <Reference Include="Unity.ResourceManager">
      <HintPath>D:\TEST_TASKS\EpicRift\Shop_XFlow\Shop_XFlow\Library\ScriptAssemblies\Unity.ResourceManager.dll</HintPath>
      </Reference>
-     <Reference Include="UnityEditor.UI">
-     <HintPath>D:\TEST_TASKS\EpicRift\Shop_XFlow\Shop_XFlow\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-     </Reference>
      <Reference Include="UnityEngine.UI">
      <HintPath>D:\TEST_TASKS\EpicRift\Shop_XFlow\Shop_XFlow\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.TextMeshPro">
+     <HintPath>D:\TEST_TASKS\EpicRift\Shop_XFlow\Shop_XFlow\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.UI">
+     <HintPath>D:\TEST_TASKS\EpicRift\Shop_XFlow\Shop_XFlow\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

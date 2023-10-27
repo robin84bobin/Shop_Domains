@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51598b1a4a81e4049ab0a6b3b8178138, type: 3}
-  m_Name: ShopConfig
+  m_Script: {fileID: 11500000, guid: 7babb0fc4d0cbd146bb4a4e8d9e88878, type: 3}
+  m_Name: HealthModelAsset
   m_EditorClassIdentifier: 
-  items:
-  - {fileID: 11400000, guid: ef1c1fe867d84ca4a825d42ac67aec47, type: 2}
-  - {fileID: 0}
+  defaultValue: 100
+  maxValue: 100
+  minValue: 0

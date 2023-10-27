@@ -6,12 +6,13 @@ namespace Shop.Configs
     [CreateAssetMenu(fileName = "SellableItemConfig", menuName = "Shop Config/Sellable Item Config")]
     public class SellableItemConfig : ScriptableObject
     {
-        [SerializeReference] ISellable _sellable;
+        [SerializeField] public string title;
+        [SerializeReference] ISpendable _price;
         [SerializeReference] IReward _reward;
 
         public void Sell()
         {
-            _sellable.Sell();
+            _price.Sell();
             _reward.Apply();
         }
     }

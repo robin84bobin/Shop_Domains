@@ -41,7 +41,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Location\LocationSellable.cs" />
+     <Compile Include="Assets\Scripts\Location\LocationSpendable.cs" />
+     <Compile Include="Assets\Scripts\Location\LocationModel.cs" />
      <None Include="Assets\Scripts\Location\LocationAssembly.asmdef" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.12f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

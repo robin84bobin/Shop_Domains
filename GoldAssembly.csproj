@@ -41,8 +41,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Gold\GoldManager.cs" />
-     <Compile Include="Assets\Scripts\Gold\GoldSellable.cs" />
+     <Compile Include="Assets\Scripts\Gold\GoldModel.cs" />
+     <Compile Include="Assets\Scripts\Gold\FixedGoldSpendable.cs" />
      <None Include="Assets\Scripts\Gold\GoldAssembly.asmdef" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.12f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

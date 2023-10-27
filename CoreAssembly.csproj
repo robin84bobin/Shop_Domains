@@ -41,8 +41,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Core\ISellable.cs" />
+     <Compile Include="Assets\Scripts\Core\ISpendable.cs" />
      <Compile Include="Assets\Scripts\Core\IReward.cs" />
+     <Compile Include="Assets\Scripts\Core\Models\IntParamModel.cs" />
+     <Compile Include="Assets\Scripts\Core\Models\StringParamModel.cs" />
+     <Compile Include="Assets\Scripts\Core\ReactiveParameter.cs" />
+     <Compile Include="Assets\Scripts\Core\Models\BaseParamModel.cs" />
      <None Include="Assets\Scripts\Core\CoreAssembly.asmdef" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.12f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

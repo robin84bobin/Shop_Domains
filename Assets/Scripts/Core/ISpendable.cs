@@ -1,6 +1,6 @@
 ﻿namespace Core
 {
-    public interface ISellable
+    public interface ISpendable
     {
         void Sell();
     }

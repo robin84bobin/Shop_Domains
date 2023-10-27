@@ -41,7 +41,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Health\HealthSellable.cs" />
+     <Compile Include="Assets\Scripts\Health\FixedHealthSpendable.cs" />
+     <Compile Include="Assets\Scripts\Health\HealthModel.cs" />
      <None Include="Assets\Scripts\Health\HealthAssembly.asmdef" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.12f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

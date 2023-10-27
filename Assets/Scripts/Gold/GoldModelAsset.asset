@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51598b1a4a81e4049ab0a6b3b8178138, type: 3}
-  m_Name: ShopConfig
+  m_Script: {fileID: 11500000, guid: 5e1c99ece180d81429109087e3c4670e, type: 3}
+  m_Name: GoldModelAsset
   m_EditorClassIdentifier: 
-  items:
-  - {fileID: 11400000, guid: ef1c1fe867d84ca4a825d42ac67aec47, type: 2}
-  - {fileID: 0}
+  defaultValue: 100
+  maxValue: 1000000
+  minValue: 0
