@@ -1,0 +1,16 @@
+{
+    "name": "LocationAssembly",
+    "rootNamespace": "",
+    "references": [
+        "GUID:3623b9f31683adc44b52144a6c448540"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
