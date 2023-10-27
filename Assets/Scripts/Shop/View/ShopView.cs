@@ -1,31 +1,49 @@
 using System.Collections.Generic;
+using Core.View;
 using Shop.Configs;
 using Shop.Model;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 namespace Shop.View
 {
     public class ShopView : MonoBehaviour
     {
         [SerializeField] private ShopModel model;
+        [SerializeField] private PlayerParamWidget[] playerParamWidgets;
         [SerializeField] private Transform contentRoot;
-        [SerializeField] private ShopItemWidget shopItemPrefab;
+        [SerializeField] private AssetReference shopItemAssetRef;
 
-        private List<SellableItemConfig> _sellableItems;
+        private List<ShopItemModel> _sellableItems;
         
-        public void Start()
+        public async void Start()
         {
-            model.Init();
-            ShowItems();
+            await model.Init();
+            InitPlayerParamsWidgets();
+            ShowSellableItems();
         }
 
-        private void ShowItems()
+        private void InitPlayerParamsWidgets()
+        {
+            foreach (var paramWidget in playerParamWidgets)
+            {
+                paramWidget.Init();
+            }
+        }
+
+        private async void ShowSellableItems()
         {
             foreach (var sellableItem in model.SellableItems)
             {
-                var widget = Instantiate(shopItemPrefab, contentRoot);
-                widget.Setup(sellableItem);
+                var gameObj = await Addressables.InstantiateAsync(shopItemAssetRef, contentRoot).Task;
+                var shopItemWidget = gameObj.GetComponent<ShopItemWidget>();
+                shopItemWidget.Setup(sellableItem);
             }
+        }
+
+        private void OnDestroy()
+        {
+            model.Release();
         }
     }
 }

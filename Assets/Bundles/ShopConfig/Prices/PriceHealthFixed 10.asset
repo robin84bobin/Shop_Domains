@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ae7912bf957d443adee3d2c48c6564, type: 3}
+  m_Name: PriceHealthFixed 10
+  m_EditorClassIdentifier: 
+  _spendable:
+    rid: 7068658663681687557
+  references:
+    version: 2
+    RefIds:
+    - rid: 7068658663681687557
+      type: {class: IntFixedSpendable, ns: Core.Models.Spendable, asm: CoreAssembly}
+      data:
+        ParamModel: {fileID: 11400000, guid: 1c06719a15c0b8348b37df8b5d7c1b74, type: 2}
+        _fixedValue: 10

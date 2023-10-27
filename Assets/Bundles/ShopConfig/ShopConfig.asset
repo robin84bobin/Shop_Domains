@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ShopConfig
   m_EditorClassIdentifier: 
   items:
-  - {fileID: 11400000, guid: ef1c1fe867d84ca4a825d42ac67aec47, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 686b4da2a35ad904fa423d5e0e0f3d5a, type: 2}
+  - {fileID: 11400000, guid: 58a9458eee17b5144bbf4e89bf1b7cc0, type: 2}

@@ -1,4 +1,3 @@
-using System;
 using Shop.Configs;
 using TMPro;
 using UnityEngine;
@@ -8,8 +7,9 @@ namespace Shop.View
 {
     public class ShopItemWidget : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI value;
+        [SerializeField] private TextMeshProUGUI title;
         [SerializeField] private Button sellButton;
+        private ShopItemModel _shopItemModel;
 
         private void Start()
         {
@@ -23,12 +23,28 @@ namespace Shop.View
 
         private void OnSellClickHandler()
         {
-            throw new NotImplementedException();
+            _shopItemModel.Buy();
+            UpdateView();
         }
 
-        public void Setup(SellableItemConfig sellableItem)
+        public void Setup(ShopItemModel shopItem)
         {
-            Debug.Log(sellableItem.title);
+            Debug.Log(shopItem.title);
+            _shopItemModel = shopItem;
+            _shopItemModel.OnChanged += UpdateView;
+            UpdateView();
+        }
+
+        private void UpdateView()
+        {
+            title.text = _shopItemModel.title;
+            var affordable = _shopItemModel.IsAffordable();
+            sellButton.interactable = affordable;
+        }
+
+        public void Release()
+        {
+            _shopItemModel.OnChanged -= UpdateView;
         }
     }
 }

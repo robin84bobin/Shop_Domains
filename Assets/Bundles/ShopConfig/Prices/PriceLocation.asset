@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ae7912bf957d443adee3d2c48c6564, type: 3}
+  m_Name: PriceLocation
+  m_EditorClassIdentifier: 
+  _spendable:
+    rid: 7068658630750896130
+  references:
+    version: 2
+    RefIds:
+    - rid: 7068658630750896130
+      type: {class: LocationSpendable, ns: Location, asm: LocationAssembly}
+      data:
+        locationModel: {fileID: 11400000, guid: 32519371233aa734f8aae3a7f555d085, type: 2}

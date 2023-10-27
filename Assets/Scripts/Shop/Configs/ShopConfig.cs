@@ -6,8 +6,6 @@ namespace Shop.Configs
     [CreateAssetMenu(fileName = "ShopConfig", menuName = "Shop Config /Shop Config")]
     public class ShopConfig : ScriptableObject
     {
-        [SerializeField] 
-        public List<SellableItemConfig> items;
-        
+        [SerializeField] public List<ShopItemModel> items;
     }
 }

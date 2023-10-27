@@ -1,14 +1,10 @@
-﻿using Core.Models;
+﻿using Core.Models.PlayerParams;
 using UnityEngine;
 
 namespace Health
 {
-    [CreateAssetMenu(menuName = "Create HealthModel", fileName = "HealthModel", order = 0)]
+    [CreateAssetMenu(menuName = "Create HealthModel", fileName = "HealthModelAsset", order = 0)]
     public class HealthModel : IntParamModel
     {
-        public void Spend(int value)
-        {
-            Parameter.Value -= value;
-        }
     }
 }
