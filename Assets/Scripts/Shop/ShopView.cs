@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Core;
+using Shop.Configs;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
@@ -10,7 +11,7 @@ namespace Shop
         [SerializeField] private Transform contentRoot;
         [SerializeField] private ShopItemWidget shopItemPrefab;
 
-        private List<ISellable> _sellableItems;
+        private List<SellableItemConfig> _sellableItems;
         
         public void Start()
         {
@@ -21,16 +22,24 @@ namespace Shop
         private async void LoadItems()
         {
             var locations = await Addressables.LoadResourceLocationsAsync("ShopConfig").Task;
-            var configs = await Addressables.LoadAssetsAsync<ISellable>(locations,o => { }).Task;
-                
+            var configs = await Addressables.LoadAssetsAsync<ShopConfig>(locations,o => { }).Task;
+
+            _sellableItems = new List<SellableItemConfig>();
+            foreach (var shopConfig in configs)
+            {
+                _sellableItems.AddRange(shopConfig.items);
+            }
+
+
+            foreach (var sellableItem in _sellableItems)
+            {
+                sellableItem.Sell();
+            }
             
             int count = 0;
-            _sellableItems = new List<ISellable>();
+            
         }
 
-        private void Callback<TObject>(TObject obj)
-        {
-        }
 
         private void ShowItems()
         {

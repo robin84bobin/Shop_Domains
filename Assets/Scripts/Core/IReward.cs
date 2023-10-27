@@ -2,6 +2,6 @@
 {
     public interface IReward
     {
-        void AddReward(int value);
+        void Apply();
     }
 }

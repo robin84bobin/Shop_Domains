@@ -1,12 +1,11 @@
-using Core;
-using UnityEditor;
-using UnityEngine;
-
 namespace Gold
 {
-    public class GoldManager : ScriptableObject, ISellable, IReward
+    public class GoldManager 
     {
-        public void Sell(int value)
+        private static GoldManager _instance;
+        public static GoldManager Instance => _instance ??= new GoldManager();
+
+        public void Sell()
         {
             throw new System.NotImplementedException();
         }

@@ -2,6 +2,6 @@
 {
     public interface ISellable
     {
-        void Sell(int value);
+        void Sell();
     }
 }

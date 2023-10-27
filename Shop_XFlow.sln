@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "medvedya.select_implementation_property_drawer", "medvedya.select_implementation_property_drawer.csproj", "{e00cfa02-921f-ac4c-c0b9-d8512a180a68}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreAssembly", "CoreAssembly.csproj", "{b34c6cd2-281a-2bed-9754-f5189860f89d}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopAssembly", "ShopAssembly.csproj", "{a8e19c73-11e8-c158-c0bf-45e5e17a434c}"
@@ -17,8 +15,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocationAssembly", "Locatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthAssembly", "HealthAssembly.csproj", "{2d26aeb1-c720-b61a-de1b-90859ddbffbe}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "medvedya.select_implementation_property_drawer_editor", "medvedya.select_implementation_property_drawer_editor.csproj", "{d241ba8f-9338-4b17-6829-1bd6e61fc041}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{bc6b0490-48e6-2297-0eca-bb11123074cf}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{3071d685-d89a-9a55-b750-7690708e43d9}"
@@ -28,8 +24,6 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{e00cfa02-921f-ac4c-c0b9-d8512a180a68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{e00cfa02-921f-ac4c-c0b9-d8512a180a68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{b34c6cd2-281a-2bed-9754-f5189860f89d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{b34c6cd2-281a-2bed-9754-f5189860f89d}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{a8e19c73-11e8-c158-c0bf-45e5e17a434c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -44,8 +38,6 @@ Global
 		{8780a66f-6f58-6e28-e446-b69d52b8822b}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2d26aeb1-c720-b61a-de1b-90859ddbffbe}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2d26aeb1-c720-b61a-de1b-90859ddbffbe}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{d241ba8f-9338-4b17-6829-1bd6e61fc041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{d241ba8f-9338-4b17-6829-1bd6e61fc041}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{bc6b0490-48e6-2297-0eca-bb11123074cf}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{bc6b0490-48e6-2297-0eca-bb11123074cf}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3071d685-d89a-9a55-b750-7690708e43d9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
