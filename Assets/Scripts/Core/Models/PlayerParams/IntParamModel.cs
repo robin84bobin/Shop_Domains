@@ -1,27 +1,13 @@
-﻿using Core.Common;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Core.Models.PlayerParams
 {
     public class NumericalParamModel : TypedParamModel<float>
     {
-        [SerializeField] protected int defaultValue = 0;
         [SerializeField] protected int maxValue = 100;
         [SerializeField] protected int minValue = 0;
 
         public float Value => Parameter.Value;
-        private ReactiveParameter<float> Parameter { get; set; }
-
-        public override void Init()
-        {
-            Parameter = new ReactiveParameter<float>(defaultValue);
-            Parameter.OnValueChange += OnValueChanged;
-        }
-
-        public override void Release()
-        {
-            Parameter.OnValueChange -= OnValueChanged;
-        }
 
         public bool CheckValueToSpend(float spendValue)
         {
@@ -47,6 +33,6 @@ namespace Core.Models.PlayerParams
             Parameter.Value = maxValue >= newValue ? newValue : maxValue;
         }
 
-        public override string GetValueText() => $"{Parameter.Value:0}";
+        public string GetValueText() => $"{Parameter.Value:0}";
     }
 }

@@ -16,13 +16,8 @@ namespace Core.View
 
         public override void Init()
         {
+            title.text = paramModel.ParameterName;
             UpdateValue();    
-        }
-        
-        protected override void OnDestroy()
-        {
-            base.OnDestroy();
-            paramModel.OnValueChange -= ValueChangeHandler;
         }
 
         private void ValueChangeHandler(float oldValue, float newValue)
@@ -38,6 +33,12 @@ namespace Core.View
         protected override void CheatButtonClickHandler()
         {
             paramModel.AddValue(1);
+        }
+
+        public override void Release()
+        {
+            base.Release();
+            paramModel.OnValueChange -= ValueChangeHandler;
         }
     }
 }

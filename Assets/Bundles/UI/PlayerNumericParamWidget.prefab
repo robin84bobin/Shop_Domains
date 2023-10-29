@@ -92,6 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac893fd735fe62c48aaf7ee4a57622b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  title: {fileID: 4703540879203618902}
   value: {fileID: 7478868953243906319}
   cheatButton: {fileID: 2236563810120962922}
   paramModel: {fileID: 0}

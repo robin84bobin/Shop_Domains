@@ -16,11 +16,6 @@ namespace Shop.View
             sellButton.onClick.AddListener(OnSellClickHandler);
         }        
         
-        private void OnDestroy()
-        {
-            sellButton.onClick.RemoveListener(OnSellClickHandler);
-        }
-
         private void OnSellClickHandler()
         {
             _shopItemModel.Buy();
@@ -43,6 +38,7 @@ namespace Shop.View
 
         public void Release()
         {
+            sellButton.onClick.RemoveListener(OnSellClickHandler);
             _shopItemModel.OnChanged -= UpdateView;
         }
     }

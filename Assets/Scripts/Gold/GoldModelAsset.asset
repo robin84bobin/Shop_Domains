@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7277cc8d1fa21a489dfe910497f453e, type: 3}
-  m_Name: BuyHealthForGold
+  m_Script: {fileID: 11500000, guid: 5e1c99ece180d81429109087e3c4670e, type: 3}
+  m_Name: GoldModelAsset
   m_EditorClassIdentifier: 
-  title: Buy Health for Gold
-  price: {fileID: 11400000, guid: a03da3208417c894eb602f56ea2d7ca2, type: 2}
-  reward: {fileID: 0}
+  parameterName: GOLD
+  defaultValue: 100
+  maxValue: 1000000
+  minValue: 0

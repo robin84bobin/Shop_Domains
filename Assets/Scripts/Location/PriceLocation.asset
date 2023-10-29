@@ -20,4 +20,4 @@ MonoBehaviour:
     - rid: 7068658630750896130
       type: {class: LocationSpendable, ns: Location, asm: LocationAssembly}
       data:
-        locationModel: {fileID: 11400000, guid: 32519371233aa734f8aae3a7f555d085, type: 2}
+        _locationModel: {fileID: 11400000, guid: 32519371233aa734f8aae3a7f555d085, type: 2}

@@ -24,7 +24,7 @@ namespace Shop
 
         private async Task InitParamModels()
         {
-            var locations = await Addressables.LoadResourceLocationsAsync("ParamsModel").Task;
+            var locations = await Addressables.LoadResourceLocationsAsync("GameParamModel").Task;
             _paramModels = await Addressables.LoadAssetsAsync<BaseParamModel>(locations, null).Task;
             _paramModels.ForEach(i => i.Init());
         }

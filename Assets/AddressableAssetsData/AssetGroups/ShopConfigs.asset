@@ -18,20 +18,10 @@ MonoBehaviour:
   m_GUID: 70dc8838b1db30f4f97a59193341de2f
   m_SerializeEntries:
   - m_GUID: d7ce1f406cdcfd546835f251fc8d7ae0
-    m_Address: Assets/Bundles/ShopConfigsBundles/ShopItems
+    m_Address: ShopItems
     m_ReadOnly: 0
     m_SerializedLabels:
     - ShopItem
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 14d53ef634d13634398f7c40d2761241
-    m_Address: Assets/Bundles/ShopConfigsBundles/Prices
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b26e9eeb39c9c3549987557c8870dc32
-    m_Address: Assets/Bundles/ShopConfigsBundles/Rewards
-    m_ReadOnly: 0
-    m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: b563abfd5a1926e488b3f67f2c760d58, type: 2}

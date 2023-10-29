@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7babb0fc4d0cbd146bb4a4e8d9e88878, type: 3}
-  m_Name: HealthModelAsset
+  m_Script: {fileID: 11500000, guid: eb21c8269aab7b74fbca9cf3da9700b1, type: 3}
+  m_Name: LocationModelAsset
   m_EditorClassIdentifier: 
-  defaultValue: 100
-  maxValue: 100
-  minValue: 0
+  parameterName: LOCATION
+  defaultValue: LocationHome

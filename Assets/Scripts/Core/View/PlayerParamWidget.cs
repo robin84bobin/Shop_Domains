@@ -6,6 +6,7 @@ namespace Core.View
 {
     public abstract class PlayerParamWidget : MonoBehaviour
     {
+        [SerializeField] protected TextMeshProUGUI title;
         [SerializeField] protected TextMeshProUGUI value;
         [SerializeField] private Button cheatButton;
 
@@ -14,12 +15,13 @@ namespace Core.View
             cheatButton.onClick.AddListener(CheatButtonClickHandler);
         }
 
-        protected virtual void OnDestroy()
+        protected abstract void CheatButtonClickHandler();
+
+        public abstract void Init();
+
+        public virtual void Release()
         {
             cheatButton.onClick.RemoveListener(CheatButtonClickHandler);
         }
-
-        protected abstract void CheatButtonClickHandler();
-        public abstract void Init();
     }
 }

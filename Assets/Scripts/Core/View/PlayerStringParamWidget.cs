@@ -1,13 +1,11 @@
-﻿using Core.Models;
-using Core.Models.PlayerParams;
+﻿using Core.Models.PlayerParams;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Core.View
 {
     public class PlayerStringParamWidget : PlayerParamWidget
     {
-        [FormerlySerializedAs("paramManager")] [SerializeField] private StringParamModel paramModel;
+        [SerializeField] private StringParamModel paramModel;
 
         protected override void Start()
         {
@@ -17,21 +15,23 @@ namespace Core.View
 
         public override void Init()
         {
+            title.text = paramModel.ParameterName;
             UpdateValue();
         }
 
         private void OnValueChangeHandler(string oldValue, string newValue) => UpdateValue();
-        private void UpdateValue() => value.text = paramModel.GetValueText();
 
-        protected override void OnDestroy()
-        {
-            base.OnDestroy();
-            paramModel.OnValueChange -= OnValueChangeHandler;
-        }
+        private void UpdateValue() => value.text = paramModel.GetValueText();
 
         protected override void CheatButtonClickHandler()
         {
             paramModel.ResetValue();
+        }
+
+        public override void Release()
+        {
+            base.Release();
+            paramModel.OnValueChange -= OnValueChangeHandler;
         }
     }
 }

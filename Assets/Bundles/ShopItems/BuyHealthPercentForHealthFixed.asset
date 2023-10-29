@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b7277cc8d1fa21a489dfe910497f453e, type: 3}
-  m_Name: BuyGoldForHealth
+  m_Name: BuyHealthPercentForHealthFixed
   m_EditorClassIdentifier: 
-  title: Buy Gold for Health
+  title: test
   price: {fileID: 11400000, guid: cc7ef3001fe38e2489f5de670b74d7c5, type: 2}
-  reward: {fileID: 0}
+  reward: {fileID: 11400000, guid: aeed93e878f0c0c4c92b074e3ae98569, type: 2}

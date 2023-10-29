@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: d736b66b7b389164d97435790d9fffc7
   m_currentHash:
     serializedVersion: 2
-    Hash: b9c260dce806941ee64f6ec52a14361f
+    Hash: 9825e7672cd73cd82d9114c59d048337
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
@@ -90,7 +90,7 @@ MonoBehaviour:
   m_LabelTable:
     m_LabelNames:
     - default
-    - ParamsModel
+    - GameParamModel
     - ShopItem
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
