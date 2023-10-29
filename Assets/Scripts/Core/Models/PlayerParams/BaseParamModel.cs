@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Core.PlayerParams
+namespace Core.Models.PlayerParams
 {
     public abstract class BaseParamModel : ScriptableObject
     {

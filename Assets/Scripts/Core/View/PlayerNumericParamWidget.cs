@@ -1,4 +1,4 @@
-﻿using Core.PlayerParams;
+﻿using Core.Models.PlayerParams;
 using UnityEngine;
 using UnityEngine.Serialization;
 

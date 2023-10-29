@@ -1,4 +1,6 @@
-﻿namespace Core.Models.Reward
+﻿using System;
+
+namespace Core.Models.Reward
 {
     public interface IReward
     {

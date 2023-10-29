@@ -1,27 +1,36 @@
 ﻿using System;
+using Core.Models.Reward;
 using Core.Models.Spendable;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Location
 {
-    [Serializable]
-    public class LocationSpendable : ISpendable
+    internal class LocationReward : IReward
     {
-        [FormerlySerializedAs("locationManager")]
-        [Header("!Note: Drops location to default")]
-        [SerializeField] LocationModel locationModel;
+        [SerializeField] LocationModel _locationModel;
+        [SerializeField] string _locationName;
         
-        public event Action OnChanged;
+        public void Apply()
+        {
+            _locationModel.SetValue(_locationName);
+        }
+    }
+
+    internal class LocationSpendable : ISpendable
+    {
+        [Header("!Note: Drops location to default")]
+        [SerializeField] LocationModel _locationModel;
+        
+        public event Action OnParamValueChanged;
 
         public void Init()
         {
-            locationModel.OnValueChange += OnValueChangeHandler;
+            _locationModel.OnValueChange += OnValueChangeHandler;
         }
 
         private void OnValueChangeHandler(string oldvalue, string newvalue)
         {
-            OnChanged?.Invoke();
+            OnParamValueChanged?.Invoke();
         }
 
         public bool IsAffordable()
@@ -29,9 +38,10 @@ namespace Location
             return true;
         }
 
-        public void Spend()
+        public bool Spend()
         {
-            locationModel.ResetValue();
+            _locationModel.ResetValue();
+            return true;
         }
     }
 }

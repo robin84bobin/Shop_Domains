@@ -12,7 +12,7 @@ namespace Shop.Model
         public void Init()
         {
             _spendable.Init();
-            _spendable.OnChanged += OnChangedHandler;
+            _spendable.OnParamValueChanged += OnChangedHandler;
         }
 
         private void OnChangedHandler()
@@ -21,7 +21,7 @@ namespace Shop.Model
         }
 
         public event Action OnChanged;
-        public void Spend() => _spendable.Spend();
+        public bool Spend() => _spendable.Spend();
         public bool IsAffordable() => _spendable.IsAffordable();
     }
 }

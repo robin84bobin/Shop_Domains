@@ -1,8 +1,7 @@
-﻿using System;
-using Core.Common;
+﻿using Core.Common;
 using UnityEngine;
 
-namespace Core.PlayerParams
+namespace Core.Models.PlayerParams
 {
     public class NumericalParamModel : TypedParamModel<float>
     {
@@ -24,13 +23,13 @@ namespace Core.PlayerParams
             Parameter.OnValueChange -= OnValueChanged;
         }
 
-        public override bool CheckValueToSpend(float spendValue)
+        public bool CheckValueToSpend(float spendValue)
         {
             var newValue = Parameter.Value - spendValue;
             return newValue >= minValue;
         }
         
-        public override void Spend(float value)
+        public void Spend(float value)
         {
             if (value == 0)
                 return;
@@ -39,7 +38,7 @@ namespace Core.PlayerParams
             Parameter.Value = newValue >= minValue ? newValue : minValue;
         }
 
-        public override void AddValue(float value)
+        public void AddValue(float value)
         {
             if (value == 0)
                 return;

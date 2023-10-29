@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb21c8269aab7b74fbca9cf3da9700b1, type: 3}
   m_Name: LocationModelAsset
   m_EditorClassIdentifier: 
-  defaultValue: 
-  defaultLocation: LocationDefault
+  defaultValue: LocationHome

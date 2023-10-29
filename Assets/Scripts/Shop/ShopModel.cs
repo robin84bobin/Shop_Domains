@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using Core.PlayerParams;
+using Core.Models.PlayerParams;
 using Shop.Model;
 using Sirenix.Utilities;
 using UnityEngine;
@@ -9,7 +9,7 @@ using UnityEngine.AddressableAssets;
 namespace Shop
 {
     [CreateAssetMenu(menuName = "Create ShopModel", fileName = "ShopModel", order = 0)]
-    public class ShopModel : ScriptableObject
+    internal class ShopModel : ScriptableObject
     {
         public IEnumerable<ShopItemModel> SellableItems => _sellableItems;
         private IList<ShopItemModel> _sellableItems;
@@ -20,12 +20,6 @@ namespace Shop
         {
             await InitParamModels();
             await InitSellableItems();
-        }
-
-        public void Release()
-        {
-            _paramModels.ForEach(i => i.Release());
-            _sellableItems.ForEach(i => i.Release());
         }
 
         private async Task InitParamModels()
@@ -40,6 +34,12 @@ namespace Shop
             var locations = await Addressables.LoadResourceLocationsAsync("ShopItem").Task;
             _sellableItems = await Addressables.LoadAssetsAsync<ShopItemModel>(locations, null).Task;
             _sellableItems.ForEach(i => i.Init());
+        }
+
+        public void Release()
+        {
+            _paramModels.ForEach(i => i.Release());
+            _sellableItems.ForEach(i => i.Release());
         }
     }
 }

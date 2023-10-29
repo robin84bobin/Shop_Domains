@@ -2,7 +2,7 @@
 
 namespace Core.Models.Spendable
 {
-    public class NumericalFixedSpendable : NumericalSpendable
+    internal class NumericalFixedSpendable : NumericalSpendable
     {
         [SerializeField] private int _fixedValue;
         protected override float ValueToSpend => _fixedValue;

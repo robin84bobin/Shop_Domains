@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace Shop.View
 {
-    public class ShopItemWidget : MonoBehaviour
+    internal class ShopItemWidget : MonoBehaviour
     {
         [SerializeField] private TextMeshProUGUI title;
         [SerializeField] private Button sellButton;

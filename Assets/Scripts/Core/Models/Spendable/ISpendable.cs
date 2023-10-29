@@ -4,9 +4,9 @@ namespace Core.Models.Spendable
 {
     public interface ISpendable
     {
-        event Action OnChanged;
+        event Action OnParamValueChanged;
         void Init();
         bool IsAffordable();
-        void Spend();
+        bool Spend();
     }
 }

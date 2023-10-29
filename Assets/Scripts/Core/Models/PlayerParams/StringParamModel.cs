@@ -2,12 +2,12 @@
 using Core.Common;
 using UnityEngine;
 
-namespace Core.PlayerParams
+namespace Core.Models.PlayerParams
 {
     public abstract class StringParamModel : TypedParamModel<string>
     {
         [SerializeField] protected string defaultValue = String.Empty;
-        private ReactiveParameter<string> _parameter;
+        protected ReactiveParameter<string> _parameter;
         
         public override void Init()
         {
@@ -21,7 +21,12 @@ namespace Core.PlayerParams
         }
 
         public override string GetValueText() => _parameter.Value;
-
+       
+        public void SetValue(string value)
+        {
+            _parameter.Value = value;
+        }
+        
         public void ResetValue()
         {
             _parameter.SetDefaultValue(defaultValue);

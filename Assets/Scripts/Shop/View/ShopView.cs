@@ -7,7 +7,7 @@ using UnityEngine.Serialization;
 
 namespace Shop.View
 {
-    public class ShopView : MonoBehaviour
+    internal class ShopView : MonoBehaviour
     {
         [FormerlySerializedAs("manager")] [SerializeField] private ShopModel model;
         [SerializeField] private PlayerParamWidget[] playerParamWidgets;

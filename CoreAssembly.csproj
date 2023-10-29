@@ -44,7 +44,6 @@
      <Compile Include="Assets\Scripts\Core\View\PlayerStringParamWidget.cs" />
      <Compile Include="Assets\Scripts\Core\Models\PlayerParams\IntParamModel.cs" />
      <Compile Include="Assets\Scripts\Core\Models\Spendable\NumericalFixedSpendable.cs" />
-     <Compile Include="Assets\Scripts\Core\Models\Spendable\StringSpendable.cs" />
      <Compile Include="Assets\Scripts\Core\Models\Spendable\ISpendable.cs" />
      <Compile Include="Assets\Scripts\Core\View\PlayerParamWidget.cs" />
      <Compile Include="Assets\Scripts\Core\Common\ReactiveParameter.cs" />
@@ -55,6 +54,9 @@
      <Compile Include="Assets\Scripts\Core\Models\Spendable\NumericalSpendable.cs" />
      <Compile Include="Assets\Scripts\Core\Models\Spendable\NumericalPercentSpendable.cs" />
      <Compile Include="Assets\Scripts\Core\Models\PlayerParams\BaseParamModel.cs" />
+     <Compile Include="Assets\Scripts\Core\Models\Reward\NumericalReward.cs" />
+     <Compile Include="Assets\Scripts\Core\Models\Reward\NumericalPercentReward.cs" />
+     <Compile Include="Assets\Scripts\Core\Models\Reward\NumericalFixedReward.cs" />
      <None Include="Assets\Scripts\Core\CoreAssembly.asmdef" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.12f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

@@ -1,13 +1,13 @@
 ﻿using System;
-using Core.PlayerParams;
+using Core.Models.PlayerParams;
 using UnityEngine;
 
 namespace Core.Models.Spendable
 {
-    public abstract class NumericalSpendable : ISpendable
+    internal abstract class NumericalSpendable : ISpendable
     {
         [SerializeField] protected NumericalParamModel ParamModel;
-        public event Action OnChanged;
+        public event Action OnParamValueChanged;
         
         protected abstract float ValueToSpend { get; }
         
@@ -18,7 +18,7 @@ namespace Core.Models.Spendable
 
         private void OnValueChangeHandler(float oldvalue, float newvalue)
         {
-            OnChanged?.Invoke();
+            OnParamValueChanged?.Invoke();
         }
 
         public bool IsAffordable()
@@ -26,9 +26,13 @@ namespace Core.Models.Spendable
             return ParamModel.CheckValueToSpend(ValueToSpend);
         }
 
-        public virtual void Spend()
+        public bool Spend()
         {
+            if (!IsAffordable())
+                return false;
+            
             ParamModel.Spend(ValueToSpend);
+            return true;
         }
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Shop.Model
 {
     [CreateAssetMenu(fileName = "ShopItemModelAsset", menuName = "Shop Config/Shop Item Model")]
-    public class ShopItemModel : ScriptableObject
+    internal class ShopItemModel : ScriptableObject
     {
         [SerializeField] public string title;
         [SerializeField] ShopPriceModel price;
@@ -25,8 +25,11 @@ namespace Shop.Model
 
         public void Buy()
         {
-            price.Spend();
-            //reward.Apply();
+            var spend = price.Spend();
+            if (spend);
+            {
+                reward.Apply();
+            }
         }
 
         public bool IsAffordable() => price.IsAffordable();

@@ -12,7 +12,7 @@ namespace Core.Common
         public void SetDefaultValue(T defaultValue)
         {
             _defaultValue = defaultValue;
-            _value = _defaultValue;
+            Value = _defaultValue;
         }
 
         private T _defaultValue = default(T);
