@@ -41,12 +41,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Shop\Configs\ShopRewardModel.cs" />
-     <Compile Include="Assets\Scripts\Shop\Configs\ShopItemModel.cs" />
-     <Compile Include="Assets\Scripts\Shop\Model\ShopModel.cs" />
-     <Compile Include="Assets\Scripts\Shop\Configs\ShopConfig.cs" />
+     <Compile Include="Assets\Scripts\Shop\Model\ShopRewardModel.cs" />
+     <Compile Include="Assets\Scripts\Shop\Model\ShopItemModel.cs" />
+     <Compile Include="Assets\Scripts\Shop\ShopModel.cs" />
      <Compile Include="Assets\Scripts\Shop\View\ShopItemWidget.cs" />
-     <Compile Include="Assets\Scripts\Shop\Configs\ShopPriceModel.cs" />
+     <Compile Include="Assets\Scripts\Shop\Model\ShopPriceModel.cs" />
      <Compile Include="Assets\Scripts\Shop\View\ShopView.cs" />
      <None Include="Assets\Scripts\Shop\ShopAssembly.asmdef" />
      <Reference Include="UnityEngine">

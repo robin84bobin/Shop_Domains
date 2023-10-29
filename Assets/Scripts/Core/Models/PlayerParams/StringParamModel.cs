@@ -1,7 +1,8 @@
 ﻿using System;
+using Core.Common;
 using UnityEngine;
 
-namespace Core.Models.PlayerParams
+namespace Core.PlayerParams
 {
     public abstract class StringParamModel : TypedParamModel<string>
     {

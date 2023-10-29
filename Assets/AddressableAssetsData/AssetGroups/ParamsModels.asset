@@ -17,20 +17,8 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 2364e727594193b45a14c34679dff502
   m_SerializeEntries:
-  - m_GUID: be6a3c5206af11a429f1218d2f2870c1
-    m_Address: GoldModelAsset
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - ParamsModel
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1c06719a15c0b8348b37df8b5d7c1b74
-    m_Address: HealthModelAsset
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - ParamsModel
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 32519371233aa734f8aae3a7f555d085
-    m_Address: LocationModelAsset
+  - m_GUID: 276a228958001cc4788073d70cdb4c58
+    m_Address: Assets/Bundles/ParamsModels
     m_ReadOnly: 0
     m_SerializedLabels:
     - ParamsModel

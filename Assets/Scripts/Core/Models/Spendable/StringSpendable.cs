@@ -1,5 +1,5 @@
 ﻿using System;
-using Core.Models.PlayerParams;
+using Core.PlayerParams;
 using UnityEngine;
 
 namespace Core.Models.Spendable

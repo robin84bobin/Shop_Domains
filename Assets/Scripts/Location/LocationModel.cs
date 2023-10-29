@@ -1,7 +1,7 @@
 ﻿using System;
 using Core;
-using Core.Models;
-using Core.Models.PlayerParams;
+using Core.Common;
+using Core.PlayerParams;
 using UnityEngine;
 
 namespace Location

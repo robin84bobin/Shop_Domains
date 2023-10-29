@@ -1,4 +1,6 @@
-﻿namespace Core.Models.PlayerParams
+﻿using Core.Common;
+
+namespace Core.PlayerParams
 {
     public abstract class TypedParamModel<T> : BaseParamModel
     {

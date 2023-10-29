@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: d736b66b7b389164d97435790d9fffc7
   m_currentHash:
     serializedVersion: 2
-    Hash: 76392453cbbbe02a999519afcb274330
+    Hash: b9c260dce806941ee64f6ec52a14361f
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
@@ -47,8 +47,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0185a50e1eaf8664f8ec59c2c5916c6d, type: 2}
   - {fileID: 11400000, guid: fc928a94a4064cd449ad02431d405178, type: 2}
   - {fileID: 11400000, guid: 6f21520c4cb850d40885c395544dcc2e, type: 2}
-  - {fileID: 11400000, guid: 28541ecab33e2ed428274deb1b397864, type: 2}
   - {fileID: 11400000, guid: a25f9d546aa7f424c89847f03c68d6fd, type: 2}
+  - {fileID: 11400000, guid: e5224ff2e0b48e94aadb9666d67f1665, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -90,8 +90,8 @@ MonoBehaviour:
   m_LabelTable:
     m_LabelNames:
     - default
-    - ShopConfig
     - ParamsModel
+    - ShopItem
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 5104bd7f3b909114f976feed0325bf04, type: 2}

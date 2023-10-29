@@ -1,19 +1,21 @@
-﻿using UnityEngine;
+﻿using System;
+using Core.Common;
+using UnityEngine;
 
-namespace Core.Models.PlayerParams
+namespace Core.PlayerParams
 {
-    public class IntParamModel : TypedParamModel<int>
+    public class NumericalParamModel : TypedParamModel<float>
     {
         [SerializeField] protected int defaultValue = 0;
         [SerializeField] protected int maxValue = 100;
         [SerializeField] protected int minValue = 0;
 
-        public int Value => Parameter.Value;
-        private ReactiveParameter<int> Parameter { get; set; }
+        public float Value => Parameter.Value;
+        private ReactiveParameter<float> Parameter { get; set; }
 
         public override void Init()
         {
-            Parameter = new ReactiveParameter<int>(defaultValue);
+            Parameter = new ReactiveParameter<float>(defaultValue);
             Parameter.OnValueChange += OnValueChanged;
         }
 
@@ -22,30 +24,30 @@ namespace Core.Models.PlayerParams
             Parameter.OnValueChange -= OnValueChanged;
         }
 
-        public override bool CheckValueToSpend(int spendValue)
+        public override bool CheckValueToSpend(float spendValue)
         {
             var newValue = Parameter.Value - spendValue;
             return newValue >= minValue;
         }
         
-        public override void Spend(int value)
+        public override void Spend(float value)
         {
             if (value == 0)
                 return;
             
-            int newValue = Parameter.Value - value;
+            float newValue = Parameter.Value - value;
             Parameter.Value = newValue >= minValue ? newValue : minValue;
         }
 
-        public override void AddValue(int value)
+        public override void AddValue(float value)
         {
             if (value == 0)
                 return;
             
-            int newValue = Parameter.Value + value;
+            float newValue = Parameter.Value + value;
             Parameter.Value = maxValue >= newValue ? newValue : maxValue;
         }
 
-        public override string GetValueText() => Parameter.Value.ToString();
+        public override string GetValueText() => $"{Parameter.Value:0}";
     }
 }

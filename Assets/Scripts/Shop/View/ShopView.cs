@@ -1,15 +1,15 @@
 using System.Collections.Generic;
 using Core.View;
-using Shop.Configs;
 using Shop.Model;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
+using UnityEngine.Serialization;
 
 namespace Shop.View
 {
     public class ShopView : MonoBehaviour
     {
-        [SerializeField] private ShopModel model;
+        [FormerlySerializedAs("manager")] [SerializeField] private ShopModel model;
         [SerializeField] private PlayerParamWidget[] playerParamWidgets;
         [SerializeField] private Transform contentRoot;
         [SerializeField] private AssetReference shopItemAssetRef;

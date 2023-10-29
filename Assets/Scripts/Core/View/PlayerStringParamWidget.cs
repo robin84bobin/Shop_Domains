@@ -1,12 +1,13 @@
 ﻿using Core.Models;
-using Core.Models.PlayerParams;
+using Core.PlayerParams;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Core.View
 {
     public class PlayerStringParamWidget : PlayerParamWidget
     {
-        [SerializeField] private StringParamModel paramModel;
+        [FormerlySerializedAs("paramManager")] [SerializeField] private StringParamModel paramModel;
 
         protected override void Start()
         {

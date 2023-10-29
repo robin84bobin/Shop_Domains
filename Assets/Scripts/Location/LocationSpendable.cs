@@ -1,12 +1,14 @@
 ﻿using System;
 using Core.Models.Spendable;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Location
 {
     [Serializable]
     public class LocationSpendable : ISpendable
     {
+        [FormerlySerializedAs("locationManager")]
         [Header("!Note: Drops location to default")]
         [SerializeField] LocationModel locationModel;
         

@@ -1,4 +1,4 @@
-using Shop.Configs;
+using Shop.Model;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -29,7 +29,6 @@ namespace Shop.View
 
         public void Setup(ShopItemModel shopItem)
         {
-            Debug.Log(shopItem.title);
             _shopItemModel = shopItem;
             _shopItemModel.OnChanged += UpdateView;
             UpdateView();

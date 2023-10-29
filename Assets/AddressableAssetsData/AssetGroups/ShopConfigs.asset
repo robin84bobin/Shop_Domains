@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: ShopConfigs
+  m_EditorClassIdentifier: 
+  m_GroupName: ShopConfigs
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 70dc8838b1db30f4f97a59193341de2f
+  m_SerializeEntries:
+  - m_GUID: d7ce1f406cdcfd546835f251fc8d7ae0
+    m_Address: Assets/Bundles/ShopConfigsBundles/ShopItems
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ShopItem
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 14d53ef634d13634398f7c40d2761241
+    m_Address: Assets/Bundles/ShopConfigsBundles/Prices
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b26e9eeb39c9c3549987557c8870dc32
+    m_Address: Assets/Bundles/ShopConfigsBundles/Rewards
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: b563abfd5a1926e488b3f67f2c760d58, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 325924f0be46b7b4083b7df82c23fdd2, type: 2}
+    - {fileID: 11400000, guid: 491f4289679e8ca4fbbf8157c41c9d79, type: 2}
